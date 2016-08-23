@@ -1,0 +1,23 @@
+{
+  "name": "apps",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Rad <isratmir@yandex.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "react": "^15.3.1"
+  }
+}
