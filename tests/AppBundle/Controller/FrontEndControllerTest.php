@@ -1,14 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rad
- * Date: 8/21/16
- * Time: 11:11 PM
- */
 
 namespace Tests\AppBundle\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class FrontEndControllerTest extends \PHPUnit_Framework_TestCase {
+class FrontEndControllerTest extends WebTestCase
+{
+		public function testIndex()
+		{
+			$client = static::createClient();
+			$crawler = $client->request('GET', '/');
 
+			$this->assertEquals(200, $client->getResponse()->getStatusCode());
+		}
 }

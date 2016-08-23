@@ -14,7 +14,7 @@ class WebSites extends AbstractSeed
      */
     public function run()
     {
-        $websites = json_decode(file_get_contents('/var/www/apps/db/seeds/websites.json'), 1);
+        $websites = json_decode(file_get_contents('db/seeds/websites.json'), 1);
         $websitesTable = $this->table('websites');
 	      $websitesTable->insert($websites)->save();
     }
