@@ -35,8 +35,10 @@ var App = React.createClass({
     render: function () {
         return(
             <div className="app">
+                <button className="btn btn-block btn-default" onClick={this.getWebsite}>
+                    <span className="glyphicon glyphicon-refresh"></span>
+                </button>
                 <Website website={this.state.website}/>
-                <button className="btn btn-block btn-success" onClick={this.getWebsite}>Еще</button>
             </div>
         )
     }

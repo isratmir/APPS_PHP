@@ -1,6 +1,25 @@
 @import "https://fonts.googleapis.com/css?family=Ubuntu";
+@import "https://fonts.googleapis.com/css?family=Philosopher";
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #888; }
+
+.navbar-app {
+  background-color: #fff;
+  border: none; }
+
+a.navbar-brand {
+  font-family: 'Philosopher', sans-serif;
+  color: #055FA2; }
+  a.navbar-brand img {
+    float: left;
+    margin-right: 5px;
+    width: 17px;
+    margin-top: 2px; }
+
+#app {
+  margin-top: 40px; }
+  #app .website {
+    margin-top: 40px; }
 
 /*# sourceMappingURL=style.css.map */
