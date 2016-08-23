@@ -3,7 +3,7 @@
 
 body{
   font-family: 'Ubuntu', sans-serif;
-  color: #888;
+  color: #444;
 }
 
 .navbar-app{
@@ -26,5 +26,11 @@ a.navbar-brand{
   margin-top: 40px;
   .website{
     margin-top: 40px;
+  }
+}
+
+.navbar-right{
+  a{
+    color: #777;
   }
 }

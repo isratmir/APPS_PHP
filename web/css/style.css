@@ -2,7 +2,7 @@
 @import "https://fonts.googleapis.com/css?family=Philosopher";
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #888; }
+  color: #444; }
 
 .navbar-app {
   background-color: #fff;
@@ -21,5 +21,8 @@ a.navbar-brand {
   margin-top: 40px; }
   #app .website {
     margin-top: 40px; }
+
+.navbar-right a {
+  color: #777; }
 
 /*# sourceMappingURL=style.css.map */
