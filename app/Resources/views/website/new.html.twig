@@ -1,0 +1,33 @@
+{% extends 'triton_layout.html.twig' %}
+
+{% block title %}
+{{ parent() }} - New website
+{% endblock %}
+
+{% block body %}
+<section class="panel">
+    <header class="panel-heading">
+        <h2>New website</h2>
+    </header>
+    <div class="panel-body">
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit" class="btn btn-success"> <i class="fa fa-plus-square-o" aria-hidden="true"></i> Submit</button>
+        </p>
+        {{ form_end(form) }}
+
+
+                <div class="form-group">
+    <a class="btn btn-default" href="{{ path('website') }}">
+        <i class="fa fa-list" aria-hidden="true"></i>
+        Back to list
+    </a>
+            </div>
+
+    </div>
+</section>
+
+
+{% endblock %}
+

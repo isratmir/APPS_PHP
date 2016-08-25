@@ -1,0 +1,74 @@
+{% extends 'triton_layout.html.twig' %}
+
+{% block title %}
+{{ parent() }} - website
+{% endblock %}
+
+{% block body %}
+
+<header class="panel-heading">
+    <h2> Website</h2>
+</header>
+<div class="panel-body">
+
+    <form class="form form-vertical">
+        <fieldset>            <div class="control-group">
+                <label class="col-sm-2 control-label">Id</label>
+                <div class="col-sm-10">
+                    <span class="input-xlarge uneditable-input">{{ website.id }}</span>
+                </div>
+            </div>            <div class="control-group">
+                <label class="col-sm-2 control-label">Title</label>
+                <div class="col-sm-10">
+                    <span class="input-xlarge uneditable-input">{{ website.title }}</span>
+                </div>
+            </div>            <div class="control-group">
+                <label class="col-sm-2 control-label">Url</label>
+                <div class="col-sm-10">
+                    <span class="input-xlarge uneditable-input">{{ website.url }}</span>
+                </div>
+            </div>            <div class="control-group">
+                <label class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                    <span class="input-xlarge uneditable-input">{{ website.description }}</span>
+                </div>
+            </div>            <div class="control-group">
+                <label class="col-sm-2 control-label">Keywords</label>
+                <div class="col-sm-10">
+                    <span class="input-xlarge uneditable-input">{{ website.keywords }}</span>
+                </div>
+            </div>            <div class="control-group">
+                <label class="col-sm-2 control-label">Image</label>
+                <div class="col-sm-10">
+                    <span class="input-xlarge uneditable-input">{{ website.image }}</span>
+                </div>
+            </div>        </fieldset>
+    </form>
+        <hr>
+        <div class="form-group">
+    <a class="btn btn-default" href="{{ path('website') }}">
+        <i class="fa fa-list" aria-hidden="true"></i>
+        Back to list
+    </a>
+            <a class="btn btn-success" href="{{ path('website_edit', { 'id':  website.id }) }}">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+            Edit
+        </a>
+                <a class="btn btn-primary" href="{{ path('website_new') }}">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+            New
+        </a>
+                <form action="{{ path('website_delete', { 'id': website.id }) }}" method="post" style="display: inline-block">
+            <input type="hidden" name="_method" value="DELETE" />
+            {{ form_widget(delete_form) }}
+            <button class="btn btn-danger" type="submit" onclick="return confirm('Are you sure');">
+                <i class="fa fa-trash-o"></i> 
+                Delete</button>
+        </form>
+    </div>
+
+</div>
+<hr>
+
+{% endblock %}
+
