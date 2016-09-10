@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACF,UAAU,EAAE,OAAO;;AAGrB,YAAY;EACV,gBAAgB,EAAE,IAAI;EACtB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,+BAA+B;EAC3C,MAAM,EAAE,iBAAiB;;AAG3B,GAAG;EACD,OAAO,EAAE,IAAI",
+"sources": ["lottery.scss"],
+"names": [],
+"file": "lottery.css"
+}
