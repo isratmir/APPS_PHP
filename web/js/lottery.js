@@ -53,13 +53,21 @@ var Prize = React.createClass({
 var Prizes = React.createClass({
     render: function () {
         var data = this.props.data;
-        var template = data.map(function(item, index){
-            return(
-                <div key={index}>
-                    <Prize data={item} />
-                </div>
-            )
-        });
+        var template;
+        if (data.length > 0) {
+            template = data.map(function (item, index) {
+                return (
+                    <div key={index}>
+                        <Prize data={item}/>
+                    </div>
+                )
+            });
+        }
+        else{
+            template = <div className="col-xs-12 col-sm-6 col-sm-offset-3">
+                           <p className="bg bg-warning">Выигрыша нет</p>
+                       </div>;
+        }
         return(
             <div>{template}</div>
         )
